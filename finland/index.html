@@ -92,17 +92,17 @@ body.menu-open{overflow:hidden}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:8px; font-size:13px;font-weight:700;text-transform:capitalize;letter-spacing:.16em;color:rgb(255 255 255 / 81%);margin-bottom:20px;padding:6px 14px;border:1px solid rgba(255,255,255,.1);border-radius:0;background:rgba(255,255,255,.04)}
 .hero-eyebrow::before{content:'';width:5px;height:5px;background:var(--r);border-radius:50%;box-shadow:0 0 8px var(--r);animation:pulse 2s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
-.hero h1{font-family:var(--display);font-size:clamp(44px,5.5vw,90px);line-height:.92;letter-spacing:.02em;color:var(--w);margin-bottom:22px; }
-.hero h1 em{ font-style:normal;color:var(--r);font-size:clamp(44px,4.5vw,90px)}
-.hero-sub{font-size:17px;line-height:1.7;color:rgba(255,255,255,.65);margin-bottom:32px;max-width:540px}
+.hero h1{font-family:var(--display);font-size:clamp(44px,4vw,90px);line-height:.98;letter-spacing:.04em;color:var(--w);margin-bottom:22px; }
+.hero h1 em{ font-style:normal;color:var(--r);font-size:clamp(44px,4vw,90px);letter-spacing:.04em;}
+.hero-sub{font-size:17px;line-height:1.7;color:rgb(255, 255, 255);margin-bottom:32px;max-width:540px}
 .hero-checks{display:grid;grid-template-columns:1fr 1fr;gap:10px 20px;margin-bottom:36px}
-.hero-chk{display:flex;align-items:center;gap:9px; font-size:15px;color:rgba(255,255,255,.7);font-weight:700;}
+.hero-chk{display:flex;align-items:center;gap:9px; font-size:15px;color:rgb(255, 255, 255);font-weight:700;}
 .hero-chk::before{content:'✓';width:20px;height:20px;min-width:20px;background:var(--r);color:var(--w);border-radius:0;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800}
 .hero-btns{display:flex;gap:12px;flex-wrap:wrap}
 .btn-primary{background:var(--r);color:var(--w);padding:14px 28px;font-family:var(--display);font-size:18px;letter-spacing:.06em;border:none;cursor:pointer;transition:all .18s;display:inline-flex;align-items:center;gap:8px}
 .btn-primary:hover{background:var(--r2);transform:translateY(-1px)}
 .btn-primary:disabled{opacity:.6;cursor:not-allowed;transform:none}
-.btn-outline{background:transparent;color:rgba(255,255,255,.6);padding:14px 28px; font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:capitalize;border:1.5px solid rgba(255,255,255,.15);cursor:pointer;transition:all .18s;display:inline-flex;align-items:center;gap:8px}
+.btn-outline{background:transparent;color:rgba(255, 255, 255, 0.964);padding:14px 28px; font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:capitalize;border:1.5px solid rgba(255,255,255,.15);cursor:pointer;transition:all .18s;display:inline-flex;align-items:center;gap:8px}
 .btn-outline:hover{border-color:rgba(255, 255, 255, 0.882);color:var(--w)}
 
 /* HERO FORM */
@@ -146,7 +146,7 @@ section{padding:2.5rem 0}
 .sec-dark-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:64px 64px;pointer-events:none}
 .sec-eyebrow{ font-size:15px;font-weight:700;text-transform:capitalize;letter-spacing:.18em;color:var(--r);margin-bottom:14px;display:flex;align-items:center;gap:10px}
 .sec-eyebrow::before{content:'';width:22px;height:1.5px;background:var(--r);flex-shrink:0}
-.sec-title{font-family:var(--display);font-size:clamp(40px,4.5vw,72px);letter-spacing:.02em;line-height:.92;color:var(--k);margin-bottom:20px;max-width:800px}
+.sec-title{font-family:var(--display);font-size:clamp(40px,3vw,72px);letter-spacing:.02em;line-height:.92;color:var(--k);margin-bottom:20px;max-width:800px}
 .sec-title em{ font-style:normal;color:var(--r)}
 .sec-dark .sec-title{color:var(--w)}
 .sec-intro{font-size:18px;color:var(--g4);max-width:700px;line-height:1.7;margin-bottom:16px}
@@ -405,7 +405,10 @@ footer a:hover{color:#ff2b2b}
 </div>
 
 <!-- HERO -->
-<div class="hero" id="enquiry">
+<div class="hero" id="enquiry" style="background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.85) 0%,
+            rgba(0, 0, 0, 0.65) 40%,
+            rgba(0, 0, 0, 0.85) 100%), url('./assets/img/finland-hero-banner.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
   <div style="position:absolute;inset:0"><div class="hero-grid-pat"></div><div class="hero-orb hero-orb-1"></div><div class="hero-orb hero-orb-2"></div></div>
   <div class="wrap hero-inner">
     <div class="rv in">
