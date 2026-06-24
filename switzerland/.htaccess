@@ -1,0 +1,8 @@
+
+
+Options +FollowSymLinks -MultiViews
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} !\.php$
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_URI}.php -f
+RewriteRule ^(.*)$ $1.php [L]
